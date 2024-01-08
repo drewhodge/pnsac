@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<!-- ....................................................................... -->
+<!-- Filename: photo-gallery.html                                            -->
+<!--                                                                         -->
+<!-- Purpose: PNSAC photo gallery page.                                      -->
+<!-- ....................................................................... -->
+<!-- History:                                                                -->
+<!-- 15.Jun.2023    Created.                                                 -->
+<!-- ....................................................................... -->
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Apple macOS version 5.8.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <link rel="stylesheet" href="../assets/css/w3.css">
+  <link rel="stylesheet" href="../assets/css/colour-theme.css">
+  <link rel="stylesheet" href=
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+  <style>
+  div.scroll-container {
+    background-color: #ffffff;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 10px;
+  }
+
+  div.scroll-container img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+  }
+
+  div.caption {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  </style>
+  <title></title>
+</head>
+<body>
+  <!-- Header -->
+  <!-- <include src="./pages/header.html"></include> -->
+  <!-- Navigation -->
+  <nav class="w3-bar">
+    <div class="w3-row">
+      <img class="w3-padding-large" src="./assets/icons/pnsac-logo-wide.png" style="width:300px">
+      <span class="w3-right w3-cell-middle w3-padding-large">
+          <a href="https://www.facebook.com/pg/PNSAC/posts/?ref=page_internal"><i class="fa fa-facebook-official"
+                  style="font-size:48px;color: #456e78;"></i></a>
+          <a href="https://www.instagram.com/pnsaccomms/"><i class="fa fa-instagram"
+                  style="font-size:48px;color: #456e78;"></i></a>
+      </span>
+  </div>
+    <div class="w3-row w3-bar w3-theme-d4">
+      <div class="w3-dropdown-hover w3-theme-d4">
+        <a class="w3-button" href="../index.html">Home</a>
+        <div class=
+        "w3-dropdown-content w3-bar-block w3-card-4 w3-theme-d4">
+          <a href="./mission-statement.html" class=
+          "w3-bar-item w3-button">Mission Statement</a> <a href=
+          "./north-star-history.html" class=
+          "w3-bar-item w3-button">North Star History</a>
+        </div>
+      </div>
+      <div class="w3-dropdown-hover w3-theme-d4">
+        <a href="#restoration" class="w3-button">Restoration</a>
+        <div class=
+        "w3-dropdown-content w3-bar-block w3-card-4 w3-theme-d4">
+          <a href="./conservator-report.html" class=
+          "w3-bar-item w3-button">Conservator's Report</a> <a href=
+          "./photo-gallery.html" class=
+          "w3-bar-item w3-button">Photo Gallery</a>
+        </div>
+      </div><a href="./newsletters.html" class=
+      "w3-bar-item w3-button">Newsletters</a>
+      <div class="w3-dropdown-hover w3-theme-d4">
+        <a href="./membership.html" class=
+        "w3-button">Membership</a>
+        <div class=
+        "w3-dropdown-content w3-bar-block w3-card-4 w3-theme-d4">
+          <a href="./events.html" class="w3-bar-item w3-button">Schedule of
+          Events</a>
+        </div>
+      </div><a href="./merchandise.html" class=
+      "w3-button w3-bar-item">Merchandise</a> <a href=
+      "./contact.html" class="w3-button w3-bar-item">Contact</a>
+      <a href="./links.html" class=
+      "w3-button w3-bar-item">Links</a>
+    </div>
+  </nav><!-- Breadcrumbs -->
+  <section class="w3-container w3-theme-14">
+    <ul class="breadcrumb">
+      <li>You are here:</li>
+      <li>
+        <a href="../index.html">Home</a>
+      </li>
+      <li>
+        <a href="#">Restoration</a>
+      </li><!-- <li><a href="#">Summer 15</a></li> -->
+      <li>Photo Gallery</li>
+    </ul>
+  </section><!-- Welcome -->
+  <div class="w3-container w3-content w3-padding" style=
+  "max-width:100%">
+    <!-- Side bar -->
+    <div class="w3-panel w3-third" style="width:25%"><img src=
+    "../assets/icons/pnsac_logo.png" style="width:200px"></div>
+    <div class="w3-twothird w3-border-left w3-padding">
+      <h2 class="w3-wide">Photo Gallery</h2>
+      <p>This page has a selection of photos that show restoration
+      progress on the :w3, crew area, and engines. For up-to-date
+      photos of restoration work on North Star 17515, have a look
+      at our <a href=
+      "https://www.facebook.com/pg/PNSAC/posts/?ref=page_internal">Facebook
+      page</a> or <a href=
+      "https://www.instagram.com/pnsaccomms/">Instagram
+      site.</a></p>
+      <p>Click the buttons below to open and close the image
+      galleries.</p>
+      <div class="w3-padding-small">
+        <button onclick="myFunction('hangar')" class=
+        "w3-btn w3-block w3-round-xlarge w3-theme w3-padding-small">
+        Hangar</button>
+        <div id="hangar" class=
+        "w3-hide w3-container w3-center w3-theme-13">
+          <div style="text-align:center">
+            <h2>Hangar Operations</h2>
+          </div>
+          <div class="scroll-container">
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/hangar/hangar-1.jpg" alt=
+              "CHangar operationse" width="600" height="400">
+              <div class="caption">
+                <p>Hangar operations --1</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/hangar/hangar-2.jpg" alt=
+              "Hangar operations" width="600" height="400">
+              <div class="caption">
+                <p>Hangar operations --2</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/hangar/hangar-3.jpg" alt=
+              "Hangar operations width=" height="400">
+              <div class="caption">
+                <p>Hangar operations --3</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/hangar/hangar-4.jpg" alt=
+              "Hangar operations" width="600" height="400">
+              <div class="caption">
+                <p>Hangar operations --4</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/hangar/hangar-5.jpg" alt=
+              "Hangar operations" width="600" height="400">
+              <div class="caption">
+                <p>Hangar operations --5</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/hangar/hangar-6.jpg" alt=
+              "Hangar operations" width="600" height="400">
+              <div class="caption">
+                <p>Hangar operations --6</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-padding-small">
+        <button onclick="myFunction('cockpit')" class=
+        "w3-btn w3-block w3-round-xlarge w3-theme w3-padding-small">
+        Cockpit</button>
+        <div id="cockpit" class=
+        "w3-hide w3-container w3-center w3-theme-13">
+          <div style="text-align:center">
+            <h2>Cockpit</h2>
+          </div>
+          <div class="scroll-container">
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/cockpit/cockpit-1.jpg"
+              alt="Instrument panel" width="600" height="400">
+              <div class="caption">
+                <p>Instrument panel</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/cockpit/cockpit-2.jpg"
+              alt="Crew seata installed" width="600" height="400">
+              <div class="caption">
+                <p>Crew seats installed</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/cockpit/cockpit-3.jpg"
+              alt="Cockpit restored" width="600" height="400">
+              <div class="caption">
+                <p>Cockpit restored</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/cockpit/cockpit-5.jpg"
+              alt="HF tuner" width="600" height="400">
+              <div class="caption">
+                <p>High frequency (HF) tuner</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/cockpit/cockpit-6.jpg"
+              alt="Nav station" width="600" height="400">
+              <div class="caption">
+                <p>Navigator's station</p>
+              </div>
+            </div>
+            <div class="image">
+              <img src="../assets/images/cockpit/cockpit-7.jpg"
+              alt="RO station">
+              <div class="caption">
+                <p>Radio operator's station</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-padding-small">
+        <button onclick="myFunction('crew-area')" class=
+        "w3-btn w3-block w3-round-xlarge w3-theme w3-padding-small">
+        Crew Area</button>
+        <div id="crew-area" class=
+        "w3-hide w3-container w3-center w3-theme-13">
+          <div style="text-align:center">
+            <h2>Crew Area</h2>
+          </div>
+          <div class="scroll-container">
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/crew-area/crew-1.jpg" alt=
+              "Sink and vanity" width="600" height="400">
+              <div class="caption">
+                <p>Sink and vanity</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/crew-area/crew-3.jpg" alt=
+              "Galley interior" width="600" height="400">
+              <div class="caption">
+                <p>New galley interior</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/crew-area/crew-4.jpg" alt=
+              "Galley hot plate" width="600" height="400">
+              <div class="caption">
+                <p>Galley hot plate and warning sign</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/crew-area/crew-5.jpg" alt=
+              "Crew lounge ceiling" width="600" height="400">
+              <div class="caption">
+                <p>Crew lounge ceiling</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-padding-small">
+        <button onclick="myFunction('engines')" class=
+        "w3-btn w3-block w3-round-xlarge w3-theme w3-padding-small">
+        Engines</button>
+        <div id="engines" class=
+        "w3-hide w3-container w3-center w3-theme-13">
+          <div style="text-align:center">
+            <h2>Engines</h2>
+          </div>
+          <div class="scroll-container">
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/engines/engines-1.jpg"
+              alt="Eng 3 starboard magneto" width="600" height=
+              "400">
+              <div class="caption">
+                <p>Engine #3 starboard magneto</p>
+              </div>
+            </div>
+            <div class="image">
+              <img src="../assets/images/engines/engines-2.jpg"
+              alt="Eng 3 generator">
+              <div class="caption">
+                <p>Engine #3 generator</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/engines/engines-3.jpg"
+              alt="Eng 3 hydraulic pump" width="600" height="400">
+              <div class="caption">
+                <p>Engine #3 hydraulic pump</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/engines/engines-4.jpg"
+              alt="Eng 3 aux gearbox" width="600" height="400">
+              <div class="caption">
+                <p>Engine #3 auxilliary gearbox</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/engines/engines-6.jpg"
+              alt="Eng 3 reduction gearbox" width="600" height=
+              "400">
+              <div class="caption">
+                <p>Engine #3 reduction gearbox</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/engines/engines-7.jpg"
+              alt="Eng 3 buildup" width="600" height="400">
+              <div class="caption">
+                <p>Engine #3 buildup</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/engines/engines-9.jpg"
+              alt="Eng 3 supercharger" width="600" height="400">
+              <div class="caption">
+                <p>Engine #3 supercharger</p>
+              </div>
+            </div>
+            <div class="image" width="600" height="400">
+              <img src="../assets/images/engines/engines-11.jpg"
+              alt="Eng 3 engine stand" width="600" height="400">
+              <div class="caption">
+                <p>Engine #3 on engine stand</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-theme-d4">
+    <p>Copyright © 2003-2023 Project North Star Association of
+    Canada | All Rights Reserved.</p>
+  </footer>
+  <script>
+    function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+</html>
