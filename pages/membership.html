@@ -21,9 +21,8 @@
 </head>
 
 <body>
-  <!-- Header -->
-  <!-- <include src="./pages/header.html"></include> -->
   <!-- Navigation -->
+  <!-- Header -->
   <nav class="w3-bar">
     <div class="w3-row">
       <img class="w3-padding-large" src="../assets/icons/pnsac-logo-wide.png" style="width:300px">
@@ -34,7 +33,10 @@
             style="font-size:48px;color: #456e78;"></i></a>
       </span>
     </div>
+
+    <!-- Menu -->
     <div class="w3-row w3-bar w3-theme-d4">
+      
       <div class="w3-dropdown-hover w3-theme-d4">
         <a class="w3-button" href="../index.html">Home</a>
         <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-theme-d4">
@@ -42,23 +44,36 @@
             href="./north-star-history.html" class="w3-bar-item w3-button">North Star History</a>
         </div>
       </div>
+      
       <div class="w3-dropdown-hover w3-theme-d4">
         <a href="#restoration" class="w3-button">Restoration</a>
         <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-theme-d4">
           <a href="./conservator-report.html" class="w3-bar-item w3-button">Conservator's Report</a> <a
             href="./photo-gallery.html" class="w3-bar-item w3-button">Photo Gallery</a>
         </div>
-      </div><a href="./newsletters.html" class="w3-bar-item w3-button">Newsletters</a>
+      </div>
+      
+      <a href="./newsletters.html" class="w3-bar-item w3-button">Newsletters</a>
+      
       <div class="w3-dropdown-hover w3-theme-d4">
         <a href="./membership.html" class="w3-button">Membership</a>
         <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-theme-d4">
           <a href="./events.html" class="w3-bar-item w3-button">Schedule of Events</a>
         </div>
-      </div><a href="./merchandise.html" class="w3-button w3-bar-item">Merchandise</a> <a href="./contact.html"
-        class="w3-button w3-bar-item">Contact</a>
+      </div>
+      
+      <a href="./membership.html#membership-donations" class="w3-button w3-bar-item">Donate</a>
+
+      <a href="./merchandise.html" class="w3-button w3-bar-item">Merchandise</a>
+ 
+      <a href="./contact.html" class="w3-button w3-bar-item">Contact</a>
+      
       <a href="./links.html" class="w3-button w3-bar-item">Links</a>
+
     </div>
-  </nav><!-- Breadcrumbs -->
+  </nav>
+  
+  <!-- Breadcrumbs -->
   <section class="w3-container w3-theme-14">
     <ul class="breadcrumb">
       <li>You are here:</li>
@@ -68,11 +83,12 @@
             <li><a href="#">Summer 15</a></li> -->
       <li>Membership</li>
     </ul>
-  </section><!-- Welcome -->
+  </section>
+  
   <section class="w3-container w3-content w3-padding" style="max-width:100%">
     <!-- Side bar -->
     <div class="w3-panel w3-third" style="width:25%">
-      <img src="../assets/icons/pnsac_logo.png" style="width:200px">
+      <!--<img src="../assets/icons/pnsac_logo.png" style="width:200px">-->
       <div class="w3-bar-block w3-left-align">
         <ul class="side-toc">
           <li>
@@ -81,6 +97,8 @@
         </ul>
       </div>
     </div>
+
+    <!-- Page content -->
     <div class="w3-twothird w3-border-left w3-padding">
       <h2 class="w3-wide">Membership</h2>
       <p>We're always looking for new members to support the North
@@ -119,7 +137,7 @@
       <p><a href="../assets/static/pnsac_membership_form_rev1.13.pdf" target="_blank"><img
             src="../assets/icons/pnsac_icon_pdf_large.png" alt="PDF icon" width="150px" height="150px"></a></p>
       <p>Click to open, or right-click to download.</p>
-      <h3>Donations</h3>
+      <h3 id="membership-donations">Donations</h3>
       <p>If you would like to make a donation to the Project North
         Star Association of Canada, please click Donate and follow
         the instructions online. PNSAC is a registered charity under
@@ -135,11 +153,15 @@
         </div>
       </div>
     </div>
-  </section><!-- Footer -->
+    
+  </section>
+  
+  <!-- Footer -->
   <footer class="w3-container w3-padding-64 w3-center w3-theme-d4">
-    <p>Copyright © 2003-2023 Project North Star Association of
+    <p>Copyright © 2003-2024 Project North Star Association of
       Canada | All Rights Reserved.</p>
   </footer>
+
 </body>
 
 </html>
